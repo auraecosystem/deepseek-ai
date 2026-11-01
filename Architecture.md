@@ -319,3 +319,15 @@ My strongest recommendation: use this architecture as an engineering reference f
 One more important distinction: despite the repository name `deepseek-ai`, the inspected evidence establishes an agent/runtime and developer-tooling direction. It does not establish that this repository contains DeepSeek model weights or a complete independently trained foundation model.
 
 Next step: I recommend a full source-level audit of this repository, starting with `core`, `llm`, `ptc-runtime`, `sandbox`, `subagent`, `session`, and `credentials`, followed by its package dependency graph, native runtime, Python SDK and CI workflows. That will establish exactly which capabilities are implemented, which are incomplete, and which architectural ideas should inform LMLM.
+
+Confirmed — the repository is:
+
+[auraecosystem/deepseek-ai](https://github.com/auraecosystem/deepseek-ai?utm_source=chatgpt.com)
+
+Default branch: `main`.
+
+I’ll treat this as the target repository for the ongoing audit, not as a request to create or modify anything.
+
+The previous inspection established the architecture and some command-level findings, but did not verify the package source code, security implementation, or CI execution.
+
+Recommended next step: complete the source-level audit across the actual packages, with particular attention to `core`, `ptc-runtime`, `sandbox`, `subagent`, `guard`, `credentials`, `mcp`, and the native runtime.
